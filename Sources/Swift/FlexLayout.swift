@@ -35,7 +35,11 @@ public final class Flex {
      Flex items's UIView.
     */
     public private(set) weak var view: UIView?
-    private let yoga: YGLayout
+
+    /**
+     * Patched to support debugDescriptions in reddit-ios
+     */
+    public let yoga: YGLayout
     
     /**
      Item natural size, considering only properties of the view itself. Independent of the item frame.
